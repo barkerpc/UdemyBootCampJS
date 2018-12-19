@@ -5,3 +5,12 @@ let greetUser = function (){
 }
 
 greetUser()
+
+
+let square = function () {
+
+}
+
+let num = 3
+
+square(num)
