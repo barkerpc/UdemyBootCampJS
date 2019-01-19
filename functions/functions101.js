@@ -7,10 +7,24 @@ let greetUser = function (){
 greetUser()
 
 
-let square = function () {
-
+let square = function (num) {
+    let result = num * num  
+    return result
 }
 
-let num = 3
+let value = square(3)
+let othervalue = square(10)
 
-square(num)
+console.log(othervalue)
+console.log(value)
+
+//function converFahrenheitToCelsius
+
+let convertFahrenheitToCelsius = function(num) {
+    let celcius = (num - 32) * (5 / 9)
+    return celcius
+} 
+
+let newtemp = convertFahrenheitToCelsius(32)
+
+console.log(newtemp)
