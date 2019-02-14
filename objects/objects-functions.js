@@ -31,7 +31,7 @@ console.log(otherBookSummary.summary)
 let fahrenheit = 32
 
 let convertFahrenheit = function(fahrenheitValue) {
-    
+
     let celcius = (fahrenheit - 32) * (5 / 9)
     let kelvins = (fahrenheit + 459.67) * (5 / 9)
     return {
@@ -43,6 +43,7 @@ let convertFahrenheit = function(fahrenheitValue) {
 }
 
 let conversionTemp = convertFahrenheit(fahrenheit)
+console.log(conversionTemp)
 console.log(conversionTemp.celcius)
 console.log(conversionTemp.kelvins)
 console.log(conversionTemp.fahrenheit)
