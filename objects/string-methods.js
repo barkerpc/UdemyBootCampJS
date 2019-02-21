@@ -16,3 +16,25 @@ let password = 'abc123password098'
 console.log(password.includes('password'))
 
 console.log(name.trim())
+
+let isValidPassword = function(password) {
+
+    // if length is > 8 and doesnt contain 'password'
+
+    if (password.length > 8 && !password.includes('password')) {
+
+        return true
+
+    } else {
+        
+        return false
+    }
+
+
+}
+
+console.log(isValidPassword('passwordlong'))
+
+console.log(isValidPassword('gettinglong'))
+
+console.log(isValidPassword('12short'))
