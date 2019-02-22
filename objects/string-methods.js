@@ -21,15 +21,15 @@ let isValidPassword = function(password) {
 
     // if length is > 8 and doesnt contain 'password'
 
-    if (password.length > 8 && !password.includes('password')) {
+    // if (password.length > 8 && !password.includes('password')) {
 
-        return true
+    //     return true
 
-    } else {
-        
-        return false
-    }
+    // } else {
 
+    //     return false
+    // }
+    return (password.length > 8 && !password.includes('password'))
 
 }
 
