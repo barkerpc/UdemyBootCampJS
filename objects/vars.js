@@ -17,7 +17,7 @@ const setName = function() {
 setName()
 console.log(firstName)
 
-// dont need to declare with var BAD!
+// weirdness because of the declaration 
 console.log(age)
 
-var age
+var age = 10
