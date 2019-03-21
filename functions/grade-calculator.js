@@ -24,6 +24,6 @@ const gradeCalculator = function(studentScore, totalScore) {
 }
 
 
-let result = gradeCalculator(70,100)
+const result = gradeCalculator(70,100)
 console.log(result) 
 
