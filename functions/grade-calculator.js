@@ -2,8 +2,8 @@
 // 15/20 --> You got a C (75%)
 //100-90 A , B 89-80, C 79-70, D 69-60, F59-0
 
-let gradeCalculator = function(studentScore, totalScore) {
-    let percent = (studentScore/totalScore) * 100
+const gradeCalculator = function(studentScore, totalScore) {
+    const percent = (studentScore/totalScore) * 100
     let grade = undefined
 
     if (percent >= 90) {
