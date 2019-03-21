@@ -27,6 +27,8 @@ let makeGuess = function(numberGuess) {
         return false
     }
 
+    //return numberGuess === randomNum
+
 
 }
 
