@@ -2,5 +2,7 @@ const todo = ['Eat pickles', 'Eat more pickles', 'Buy more pickles','Buy some wi
 
 let arrayLength = todo.length
 let strArrayLength = `You have ${arrayLength}`
+let strTodoItem = `Todo: ${todo[arrayLength-2]}`
+
 console.log(strArrayLength)
-console.log(todo[arrayLength-2])
+console.log(strTodoItem)
