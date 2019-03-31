@@ -6,3 +6,5 @@ console.log(notes)
 console.log(notes.length)
 //print the first note
 console.log(notes[0])
+//get the last item
+console.log(notes[notes.length -1])
