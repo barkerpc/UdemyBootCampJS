@@ -1,10 +1,14 @@
 const notes = ['This is note 1', 'This is note 2', 'This is note 3']
 
-//print the array
-console.log(notes)
-//print the length of the array (count)
+console.log(notes.pop())
+notes.push('This is note 4')
+
+console.log(notes.shift())
+console.log(notes.unshift('This is note 0'))
+
+// notes.splice(1,1)
+notes.splice(1,0,'This is note mid')
+
+
 console.log(notes.length)
-//print the first note
-console.log(notes[0])
-//get the last item
-console.log(notes[notes.length -1])
+console.log(notes)
