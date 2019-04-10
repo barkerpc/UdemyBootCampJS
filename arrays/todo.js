@@ -10,7 +10,7 @@ let strTodoItemSecondLast = `Todo: ${todo[arrayLength-2]}`
 //add new to the end
 //remove the first item
 todo.splice(2,1)
-todo.push('This is the last item')
+todo.push('Buy honey')
 todo.shift()
 
 console.log(strArrayLength)
