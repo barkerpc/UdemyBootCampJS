@@ -5,6 +5,15 @@ let strArrayLength = `You have ${arrayLength} todos!`
 let strTodoItemFirst = `Todo: ${todo[0]}`
 let strTodoItemSecondLast = `Todo: ${todo[arrayLength-2]}`
 
+
+//delete 3rd item
+//add new to the end
+//remove the first item
+todo.splice(2,1)
+todo.push('This is the last item')
+todo.shift()
+
 console.log(strArrayLength)
-console.log(strTodoItemFirst)
-console.log(strTodoItemSecondLast)
+console.log(todo)
+// console.log(strTodoItemFirst)
+// console.log(strTodoItemSecondLast)
