@@ -10,6 +10,12 @@ todo.push('Buy honey')
 todo.shift()
 
 console.log(strArrayLength)
-console.log(todo)
+//console.log(todo)
+todo.forEach(function (item,index) {
+    const num = index + 1
+    const todoItems = `${num}. ${item}`
+    console.log(todoItems)
+    
+})
 // console.log(strTodoItemFirst)
 // console.log(strTodoItemSecondLast)

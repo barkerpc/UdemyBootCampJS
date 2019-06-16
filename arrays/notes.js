@@ -10,5 +10,10 @@ console.log(notes.unshift('This is note 0'))
 //notes.splice(1,0,'This is note mid')
 notes[2] = 'Note monkey'
 
+notes.forEach(function(item,index) {
+    console.log(item)
+    console.log(index)
+})
+
 console.log(notes.length)
 console.log(notes)
