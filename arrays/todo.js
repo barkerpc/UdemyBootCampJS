@@ -17,5 +17,9 @@ todo.forEach(function (item,index) {
     console.log(todoItems)
     
 })
-// console.log(strTodoItemFirst)
-// console.log(strTodoItemSecondLast)
+
+// for(let count = 0; count < todo.length; count++) {
+//     const num = count + 1
+//     const todoItems = todo[count]
+//     console.log(`${num}. ${todoItems}`)
+// }
