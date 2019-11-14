@@ -221,15 +221,12 @@ const HSLtoHex = function(h,s,l) {
 
 colors.forEach(function (item,index) {
     let hslValue = item.color
-    //{color: 'hsl(6, 54%, 78%)', label:' '},
+    
     hslValue = hslValue.replace("hsl(","")
     hslValue = hslValue.replace(")","")
-    hslValue = hslValue.replace("%","")
-    hslValue = hslValue.replace("%","")
-    hslValue = hslValue.replace(" ","")
-    hslValue = hslValue.replace(" ","")
-    const hslInts = hslValue.split(",")    
-    const colorTest = HSLtoHex(hslInts[0],hslInts[1],hslInts[2])
+    hslValue = hslValue.replace(/%/g,"")
+    const hslInts = hslValue.split(",")        
+    const colorTest = HSLtoHex(parseInt(hslInts[0],10),parseInt(hslInts[1],10),parseInt(hslInts[2],10))
     const hexString = `{color: '${colorTest}', label:' '},`
-    console.log(hexString)    
+    console.log(hexString)
 })
