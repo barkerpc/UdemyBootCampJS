@@ -17,14 +17,19 @@ const todos =  [{
 }
 ]
 
-// let arrayLength = todo.length
-// let strArrayLength = `You have ${arrayLength} todos!`
-// let strTodoItemFirst = `Todo: ${todo[0]}`
-// let strTodoItemSecondLast = `Todo: ${todo[arrayLength-2]}`
 
-//convert to array of objects  text and completed
+const sortTodos = function(todos) {
+    todos.sort(function (a,b){
+        if (a.completed < b.completed ) {
+            return -1
+        } else if (b.completed < a.completed) {
+            return 1
+        } else {
+            return 0
+        }
 
-//create a function that works with the arrays to remove a todo by title
+    });
+}
 
 const deleteTodo = function(todos, todoText) {
     const index = todos.findIndex(function(todo) {
@@ -38,28 +43,20 @@ const deleteTodo = function(todos, todoText) {
 
     }
 
-deleteTodo(todos,'Eat pickles')
+const findTodoStatus = function(todos) {
+    return todos.filter(function(todo,index){
+        return !todo.completed 
 
-
-console.log(todos)
-
-
-
-// todo.splice(2,1)
-// todo.push('Buy honey')
-// todo.shift()
-
-// console.log(strArrayLength)
-// //console.log(todo)
-// todo.forEach(function (item,index) {
-//     const num = index + 1
-//     const todoItems = `${num}. ${item}`
-//     console.log(todoItems)
+        })
+}
     
-// })
+    
 
-// for(let count = 0; count < todo.length; count++) {
-//     const num = count + 1
-//     const todoItems = todo[count]
-//     console.log(`${num}. ${todoItems}`)
-// }
+// deleteTodo(todos,'Eat pickles')
+
+// console.log("completed")
+// console.log(findTodoStatus(todos))
+
+//console.log(todos)
+sortTodos(todos)
+console.log(todos)
