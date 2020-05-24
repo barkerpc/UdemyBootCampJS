@@ -20,9 +20,9 @@ const todos =  [{
 
 const sortTodos = function(todos) {
     todos.sort(function (a,b){
-        if (a.completed < b.completed ) {
+        if (!a.completed && b.completed ) {
             return -1
-        } else if (b.completed < a.completed) {
+        } else if (!b.completed && a.completed) {
             return 1
         } else {
             return 0
