@@ -39,4 +39,5 @@ account.addIncome('Pay check',1950)
 account.addIncome('Bribes', 200)
 account.addExpense('Rent',950)
 account.addExpense('Coffe', 2)
+
 console.log(account.getAccountSummary())
